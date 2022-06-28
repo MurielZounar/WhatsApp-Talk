@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>WhatsApp Talk</title>
+    <link rel="stylesheet" href="CSS/styles.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@200;400&display=swap"
+      rel="stylesheet"
+    />
+    <script src="JS/scripts.js" defer></script>
+  </head>
+  <body>
+    <div id="background">
+      <img id="bkg-img" src="assets/img/Background.jpg" alt="" />
+      <div id="main-container">
+        <div id="title">
+          <h1>Iniciar Conversa no WhatsApp</h1>
+        </div>
+        <div class="form-container">
+          <div id="box">
+            <form action="" id="number">
+              <div id="num-container">
+                <label class="lbl-cont">Número do WhatsApp:</label>
+                <input
+                  required
+                  class="inp-num"
+                  name="tel"
+                  placeholder="(99) 99999-9999"
+                />
+              </div>
+              <div id="msg-container">
+                <label class="lbl-msg">Mensagem:</label>
+                <input
+                  class="inp-msg"
+                  name="msg"
+                  placeholder="Olá, tudo bem?"
+                />
+              </div>
+              <div id="btn-container">
+                <button id="btn">Iniciar Conversa</button>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
