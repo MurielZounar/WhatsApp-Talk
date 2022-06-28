@@ -1,12 +1,28 @@
-const submitBtn = document.querySelector('#btn')
+const list = document.getElementById('count-name')
 
-submitBtn.addEventListener('click', function () {
-  console.log(submitBtn)
-  const lblNum = document.getElementsByClassName('inp-num').value
-  const lblMsg = document.getElementsByClassName('inp-msg').value
-  let num = lblNum
-  let msg = lblMsg
+function setOption(country) {
+  let option = document.createElement('option')
+  let number = ''
+  for (let i = 0; i < country.fone.length; i++) {
+    const element = country.fone[i]
+    if (element != '0') {
+      number += element
+    }
+  }
+  option.innerHTML = '+' + number + ' ' + country.iso3
+  list.appendChild(option)
+}
 
-  console.log(num)
-  console.log(msg)
-})
+function getCountries(url) {
+  fetch(url)
+    .then(function (resp) {
+      return resp.json()
+    })
+    .then(function (data) {
+      data.forEach(element => {
+        setOption(element)
+      })
+    })
+}
+
+getCountries('assets/JSON/countries-JSON/countriesJson_ptBR.json')
