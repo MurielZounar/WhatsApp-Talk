@@ -34,21 +34,29 @@
                 <label class="lbl-cont">Número do WhatsApp:</label>
                 <input
                   required
-                  class="inp-num"
+                  type="number"
+                  id="inp-num"
                   name="tel"
-                  placeholder="(99) 99999-9999"
+                  placeholder="11912345678"
                 />
               </div>
               <div id="msg-container">
                 <label class="lbl-msg">Mensagem:</label>
                 <input
-                  class="inp-msg"
+                  type="text"
+                  id="inp-msg"
                   name="msg"
                   placeholder="Olá, tudo bem?"
                 />
               </div>
               <div id="btn-container">
-                <button id="btn">Iniciar Conversa</button>
+                <input
+                  type="submit"
+                  id="btn"
+                  name="msg"
+                  onclick="getText()"
+                  value="Iniciar Conversa"
+                />
               </div>
             </form>
           </div>
