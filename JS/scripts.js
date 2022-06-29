@@ -9,7 +9,7 @@ function setOption(country) {
       number += element
     }
   }
-  option.innerHTML = '+' + number + ' ' + country.iso3
+  option.innerHTML = '+' + number + ' - ' + country.iso3
   list.appendChild(option)
 }
 
