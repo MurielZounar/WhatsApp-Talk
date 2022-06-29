@@ -61,4 +61,4 @@ function getText() {
   openNewTab(text)
 }
 
-getCountries('assets/JSON/countries-JSON/countriesJson_ptBR.json')
+getCountries('assets/JSON/countries.json')
